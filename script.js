@@ -1,9 +1,9 @@
 function getWeather() {
     const city = document.getElementById("city").value;
-    const apiKey = "bd5e378503939ddaee76f12ad7a97608"; // Replace with your OpenWeatherMap API key
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = "b06cbdfe5c4f3a3a3fb4bea187b6a000";
+    const url = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
-    fetch(url)
+    fetch(url + city + "&appid=" + apiKey) 
         .then(response => response.json())
         .then(data => {
             if (data.cod === 200) {
@@ -28,3 +28,5 @@ function getWeather() {
             `;
         });
 }
+
+document.getElementById("get-weather").addEventListener("click", getWeather);
