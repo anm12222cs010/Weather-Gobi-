@@ -1,3 +1,3 @@
 # Weather-Gobi-
 
-## URL: https://anm12222cs010.github.io/Weather-Gobi-/
+## URL: https://69a5cfd7defcc292cfaef213--zippy-cranachan-e863c0.netlify.app/
